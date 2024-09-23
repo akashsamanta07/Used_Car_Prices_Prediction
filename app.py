@@ -17,7 +17,7 @@ transmission = st.selectbox('Transmission type', cars_data['transmission'].uniqu
 owner = st.selectbox('Seller  type', cars_data['owner'].unique())
 mileage = st.slider('Car Mileage(kmpl)', 10,40)
 engine = st.slider('Engine CC', 700,5000)
-max_power = st.slider('Maximum speed(bhp)', 50,400)
+max_power = st.slider('Maximum speed', 50,400)
 seats = st.slider('No of Seats', 5,10)
 model=joblib.load("modelmain.pkl")
 if st.button("Predict"):
