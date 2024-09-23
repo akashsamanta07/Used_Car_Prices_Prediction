@@ -39,4 +39,4 @@ if st.button("Predict"):
                           ,inplace=True)
 
     car_price = model.predict(input_data_model)
-    st.markdown("PREDICT PPRICES:"+ str(car_price[0]))
+    st.markdown("PREDICT PPRICES:"+ str("%.2f"%car_price[0]))
